@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" type="text/css" href="style.css" media="all">
+  <script type="text/javascript" href="main.js"></script>
 	<title>VR Slide Prototype</title>
 </head>
 <body>
-  <div class="bg-image">
   <!-- Cube Markup -->
   <!-- Thanks to Stephen Grieg for the original https://codepen.io/stephengreig/pen/gbzKq -->
-<div>
+<div class="cube-elements">
 		<input id="front" name="transforms" type="radio" value="front">
 	    <label for="front">Front</label>
 
@@ -30,7 +30,7 @@
 	    <input id="back" name="transforms" type="radio" value="back">
 	    <label for="back">Back</label>
 
-		<div class="container">
+		<div class="cube-container">
 			<figure class="cube">
 				<div class="front">Front</div>
 				<div class="left">Left</div>
@@ -44,8 +44,10 @@
 	</div>
 
   <!-- Granny Image -->
-
-
+<div class="granny-image-wrapper">
+  <div class="granny-image"></div>
 </div>
+<div class="matrix-image"></div>
+
 </body>
 </html>
