@@ -5,9 +5,16 @@ body {
 	font-family: "VT323", sans-serif;
 }
 
+h5 {
+	font-size: 18pt;
+	line-height: 2.0;
+	font-family: "VT323", sans-serif;
+}
+
 h6 {
 	font-size: 10pt;
 	line-height: 1.4;
+	font-family: "VT323", sans-serif;
 }
 /*Granny Image for different sizes*/
 /*.granny-image-wrapper {
