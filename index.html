@@ -17,7 +17,7 @@
 <body>
   <!-- Cube Markup -->
   <!-- Thanks to Stephen Grieg for the original https://codepen.io/stephengreig/pen/gbzKq -->
-<div class="cube-elements">
+<div class="cube-elements cube-delay hidden">
 		<input id="front" name="transforms" type="radio" value="front">
 	    <label for="front">Front</label>
 
@@ -36,7 +36,7 @@
 	    <input id="back" name="transforms" type="radio" value="back">
 	    <label for="back">Back</label>
 
-		<div class="cube-container">
+		<div class="cube-container cube-delay hidden">
 			<figure class="cube">
 				<div class="front">We can kinda</div>
 				<div class="left">Say whatever here</div>
@@ -57,6 +57,14 @@
 jQuery(document).ready(function() {
   jQuery(".granny-image").addClass("slide-left");
 });
+
+  // delay the loading of the cube because the other components take too long and it is jarring
+  // setTimeout(function(){
+  //   var cube-parts = jQuery(".cube-delay");
+  //   jQuery.each(cube-parts, function(i, part){
+  //     part.removeClass('hidden');
+  //   });
+  // }, 500);
 </script>
 
 </body>
