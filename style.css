@@ -2,12 +2,14 @@
 .granny-image-wrapper {
 	position: relative;
 	left: 1026px;
-	top: 330px;
+	top: 450px;
+	z-index: 100;
 }
 
 .granny-image {
 	position: absolute;
 	width: 100%;
+	left: 1000px;
 	height: 535px;
 	z-index: 100;
   background-image: url("images/VRSlide_ELE_granny-519x535.png");
@@ -67,11 +69,12 @@
 
 /*Animation Classes*/
 
-.slideInFromRight {
-	position: relative;
-	left: 10px;
+.slide-left {
+	position: absolute;
+	left: -50px;
+	top: -1050px;
+	z-index: 100;
 	transition-duration: 2s;
-	transition-delay: 0.5s;
 	transition-timing-function: cubic-bezier(1, .5, .5, 0.2);
 	transition-property: all;
 }
@@ -83,7 +86,7 @@
   margin: 50px auto;
 	position: relative;
 	left: -250px;
-	top: 100px;
+	top: 250px;
 }
 
 .cube-container {
