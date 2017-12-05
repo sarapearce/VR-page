@@ -1,10 +1,15 @@
 /*Granny Image for different sizes*/
+.granny-image-wrapper {
+	position: relative;
+	left: 1026px;
+	top: 330px;
+}
 
 .granny-image {
+	position: absolute;
+	width: 100%;
 	height: 535px;
 	z-index: 100;
-	position: absolute;
-	left: 1000px;
   background-image: url("images/VRSlide_ELE_granny-519x535.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -12,7 +17,8 @@
 
 @media screen and (max-width: 1500px) and (min-width: 800px){
 	.granny-image {
-		width: 50%;
+		position: absolute;
+		width: 100%;
 		height: 535px;
 		z-index: 100;
 	  background-image: url("images/VRSlide_ELE_granny-519x535.png");
@@ -23,7 +29,8 @@
 
 @media screen and (max-width: 800px) {
 	.granny-image {
-		width: 50%
+		position: absolute;
+		width: 100%;
 		height: 268px;
 		z-index: 100;
 	  background-image: url("images/VRSlide_ELE_granny-260x268.png");
@@ -36,12 +43,11 @@
 
 .matrix-image {
 	position: relative;
-	top: -45px;
+	top: -40px;
 	z-index: -1;
   width: 100%;
 	height: 1080px;
   background-image: url("images/VRSlide_BG_grid-1920x1080.png");
-	/*background-color: red;*/
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -49,12 +55,13 @@
 @media screen and (max-width: 1500px) {
   .matrix-image {
 		position: relative;
+		top: -40px;
 		z-index: -1;
     width: 100%;
 		height: 540px;
     background-image: url("images/VRSlide_BG_grid-960x540.png");
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -147,7 +154,7 @@ label {
 }
 
 label:hover {
-  background: #eee;
+  background: #000000;
 }
 
 input {
